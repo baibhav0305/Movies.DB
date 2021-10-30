@@ -3,9 +3,11 @@ import axios from "axios";
 import "./App.css";
 import Search from "./components/Search";
 import MovieComponent from "./components/MovieComponent";
+import MovieItem from "./components/MovieItem";
 
 function App() {
   const [items, setItems] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [query, setQuery] = useState("");
 
@@ -20,6 +22,7 @@ function App() {
       if (result.data.Search) {
         setItems(result.data.Search);
         setIsLoading(false);
+        setSelectedMovie();
       }
     };
 
@@ -32,7 +35,17 @@ function App() {
         <h1>Movies.DB</h1>
         <Search getQuery={(q) => setQuery(q)} />
       </header>
-      <MovieComponent isLoading={isLoading} items={items} />
+      {selectedMovie && (
+        <MovieItem
+          selectedMovie={selectedMovie}
+          setSelectedMovie={setSelectedMovie}
+        />
+      )}
+      <MovieComponent
+        isLoading={isLoading}
+        items={items}
+        setSelectedMovie={setSelectedMovie}
+      />
     </div>
   );
 }
