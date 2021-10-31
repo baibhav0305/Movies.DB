@@ -10,16 +10,23 @@ const MovieComponent = ({ items, isLoading, setSelectedMovie }) => {
     <section className="cards">
       {items.map((item) => (
         <div
+          className="movie-card"
           key={Math.random()}
           onClick={() => {
             setSelectedMovie(item.imdbID);
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <h1>{item.Title}</h1>
+          <h1 className="underline">{item.Title}</h1>
           <img src={item.Poster} alt="poster" />
-          <p>{item.Year}</p>
-          <p>{item.Type}</p>
+          <div className="movie-info">
+            <span>
+              <em>{item.Year}</em>
+            </span>
+            <span>
+              <em>{item.Type}</em>
+            </span>
+          </div>
         </div>
       ))}
     </section>

@@ -22,7 +22,7 @@ const MovieItem = ({ selectedMovie }) => {
         <div className="item">
           <img src={response.Poster} alt="poster" />
           <div className="item-component">
-            <h1>{response.Title}</h1>
+            <h1 className="underline">{response.Title}</h1>
             <p>
               <strong>Release Date:</strong> {response.Released}
             </p>
