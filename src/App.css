@@ -1,10 +1,41 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: aqua;
+  /* font-family: 'Aref Ruqaa', serif; */
+  font-family: "Roboto", sans-serif;
 }
 
+.container{
+  margin: 0 50px;
+}
+
+.item {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.item img {
+  border-radius: 7px;
+  height: 300px;
+}
+.item .item-component {
+  padding-left: 30px;
+}
+.item .item-component h1 {
+  padding: 10px 0;
+}
+.item .item-component p {
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
