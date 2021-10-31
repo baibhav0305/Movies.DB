@@ -10,7 +10,7 @@ const Search = ({ getQuery }) => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"
           className="form-control"

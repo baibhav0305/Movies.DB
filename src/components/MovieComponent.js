@@ -1,6 +1,4 @@
 import React from "react";
-// import Loader from "./Loader";
-// import MovieItem from "./MovieItem";
 
 const MovieComponent = ({ items, isLoading, setSelectedMovie }) => {
   //   const { Title, Year, imdbID, Type, Poster } = props.movie;
@@ -20,6 +18,8 @@ const MovieComponent = ({ items, isLoading, setSelectedMovie }) => {
         >
           <h1>{item.Title}</h1>
           <img src={item.Poster} alt="poster" />
+          <p>{item.Year}</p>
+          <p>{item.Type}</p>
         </div>
       ))}
     </section>

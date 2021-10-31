@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const MovieItem = ({ selectedMovie }) => {
   const [response, setResponse] = useState();
-  // tt0120338;
+
   useEffect(() => {
     const fetchDetails = async () => {
       const result = await axios(
@@ -19,15 +19,32 @@ const MovieItem = ({ selectedMovie }) => {
   return (
     <div>
       {response && (
-        <div>
-          <h2>{response.Title}</h2>
-          <p>{response.Released}</p>
-          <p>{response.Genre}</p>
-          <p>{response.imdbRating}</p>
-          <p>{response.BoxOffice}</p>
-          <p>{response.Director}</p>
-          <p>{response.Actors}</p>
-          <p>{response.Plot}</p>
+        <div className="item">
+          <img src={response.Poster} alt="poster" />
+          <div className="item-component">
+            <h1>{response.Title}</h1>
+            <p>
+              <strong>Release Date:</strong> {response.Released}
+            </p>
+            <p>
+              <strong>Genre:</strong> {response.Genre}
+            </p>
+            <p>
+              <strong>IMDb:</strong> {response.imdbRating}
+            </p>
+            <p>
+              <strong>Box Office:</strong> {response.BoxOffice}
+            </p>
+            <p>
+              <strong>Director:</strong> {response.Director}
+            </p>
+            <p>
+              <strong>Cast:</strong> {response.Actors}
+            </p>
+            <p>
+              <strong>Plot:</strong> {response.Plot}
+            </p>
+          </div>
         </div>
       )}
     </div>
