@@ -12,8 +12,50 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.container{
-  margin: 0 50px;
+.container {
+  /* margin: 0 100px; */
+  width: 80vw;
+  margin: auto;
+}
+
+.underline{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.form-control{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-left: 30%;
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-card {
+  width: 320px;
+  margin: 20px 0;
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 5px;
+}
+.movie-card img {
+  height: 350px;
+  width: 300px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+.movie-card .movie-info {
+  display: flex;
+  justify-content: space-between;
 }
 
 .item {
@@ -22,7 +64,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 10px;
+  margin: 10px 0;
   border-radius: 10px;
 }
 .item img {
