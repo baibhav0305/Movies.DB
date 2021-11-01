@@ -166,10 +166,23 @@ h1 {
   font-size: 1.05rem;
 }
 
-.baibhav{
+.baibhav {
   position: relative;
   bottom: 10px;
   /* left: 40%; */
   text-align: center;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .form-control{
+    margin-left: 15%;
+    width: 70%;
+  }
+  .item{
+    flex-direction: column;
+  }
+  .cards{
+    justify-content: center;
+  }
 }
