@@ -32,20 +32,25 @@ function App() {
   return (
     <div className="container">
       <header>
-        <h1>Movies.DB</h1>
+        <div className="title">
+          <img src="/favicon.jpg" alt="logo" />
+          <h1 className="glow">Movies.DB</h1>
+        </div>
         <Search getQuery={(q) => setQuery(q)} />
       </header>
-      {selectedMovie && (
-        <MovieItem
-          selectedMovie={selectedMovie}
+      <div className="body-container">
+        {selectedMovie && (
+          <MovieItem
+            selectedMovie={selectedMovie}
+            setSelectedMovie={setSelectedMovie}
+          />
+        )}
+        <MovieComponent
+          isLoading={isLoading}
+          items={items}
           setSelectedMovie={setSelectedMovie}
         />
-      )}
-      <MovieComponent
-        isLoading={isLoading}
-        items={items}
-        setSelectedMovie={setSelectedMovie}
-      />
+      </div>
     </div>
   );
 }
