@@ -4,7 +4,6 @@ const MovieComponent = ({ items, isLoading, setSelectedMovie }) => {
   //   const { Title, Year, imdbID, Type, Poster } = props.movie;
 
   return isLoading ? (
-    // <Loader />
     <div className="center">
       <h1>pls enter a valid movie or series name...</h1>
       <img src="/img/waiting.jpg" alt="loading" />

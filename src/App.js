@@ -51,6 +51,10 @@ function App() {
           setSelectedMovie={setSelectedMovie}
         />
       </div>
+      <p className="baibhav">
+        Built with ❤️ by{" "}
+        <a href="https://github.com/baibhav0305">Baibhav Panda</a>
+      </p>
     </div>
   );
 }
