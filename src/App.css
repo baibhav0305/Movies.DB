@@ -185,4 +185,11 @@ h1 {
   .cards{
     justify-content: center;
   }
+  .movie-card{
+    width: 280px;
+  }
+  .movie-card img{
+    width: 260px;
+    height: 320px;
+  }
 }
