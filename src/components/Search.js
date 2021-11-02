@@ -14,11 +14,12 @@ const Search = ({ getQuery }) => {
         <input
           type="text"
           className="form-control"
-          placeholder="Search Characters"
+          placeholder="Search for Movies or Series"
           value={text}
           onChange={(e) => onChange(e.target.value)}
           autoFocus
         />
+        <img src="" alt="" />
       </form>
     </div>
   );

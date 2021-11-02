@@ -1,21 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
 }
 
 body {
-  background-color: darkgray;
+  background-color: #292929;
   /* font-family: 'Aref Ruqaa', serif; */
-  font-family: "Roboto", sans-serif;
-  text-shadow: 2px 2px 4px #da9c9c;
+  /* font-family: "Roboto", sans-serif; */
+  /* text-shadow: 2px 2px 4px #da9c9c; */
 }
 
 h1 {
-  text-shadow: 2px 2px 4px #726a6a;
+  /* text-shadow: 2px 2px 4px #726a6a; */
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .container {
@@ -25,28 +31,31 @@ h1 {
 }
 
 .title {
-  background-color: dimgrey;
-  /* width: 98.8vw; */
+  display: flex;
+  align-items: center;
+  background-color: #292929;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .title img {
   position: relative;
-  top: 5px;
-  height: 7vh;
-  width: 7vh;
+  height: 6.5vh;
+  width: 6.5vh;
   margin-left: 30px;
   border-radius: 20%;
+  cursor: pointer;
 }
 .title h1 {
   /* position: relative; */
   /* bottom: 3px; */
   display: inline-block;
   margin-left: 20px;
-  font-size: 3rem;
-  color: rgb(226, 197, 32);
-  text-shadow: 2px 2px 4px #000000;
-  font-family: "Irish Grover", cursive;
+  font-size: 1.8rem;
+  color: #e61e25;
+  cursor: pointer;
+  /* text-shadow: 2px 2px 4px #000000; */
+  /* font-family: "Irish Grover", cursive; */
 }
 
 .body-container {
@@ -60,22 +69,22 @@ h1 {
 }
 
 .form-control {
-  padding: 15px;
+  padding: 10px;
   border: none;
   outline: none;
-  border-radius: 20px;
-  font-size: 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
   margin-top: 30px;
   margin-left: 30%;
   margin-bottom: 30px;
   width: 40%;
-  background-color: rgb(202, 245, 245);
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background-color: #3d3d3d;
+  border: 1px solid #3d3d3d;
+  color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
 }
 .form-control:hover {
-  border-bottom: 2px solid #01b4eb;
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  border: 1px solid #585858;
 }
 
 .center {
@@ -171,7 +180,12 @@ h1 {
   bottom: 10px;
   /* left: 40%; */
   text-align: center;
-  margin-top: 30px;
+  margin-top: 70px;
+  color: white;
+}
+.baibhav a{
+  text-decoration: none;
+  color: #e61e25;
 }
 
 @media screen and (max-width: 640px) {

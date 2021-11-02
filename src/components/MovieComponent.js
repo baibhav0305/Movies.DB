@@ -5,7 +5,7 @@ const MovieComponent = ({ items, isLoading, setSelectedMovie }) => {
 
   return isLoading ? (
     <div className="center">
-      <h1>pls enter a valid movie or series name...</h1>
+      <h1>please enter a valid movie or series name...</h1>
       <img src="/img/waiting.jpg" alt="loading" />
     </div>
   ) : (
